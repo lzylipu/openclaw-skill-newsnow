@@ -49,7 +49,7 @@ def main():
         print("每日热点速览发送完成！")
         
         # 保存备份
-        backup_file = f"/vol1/@apphome/trim.openclaw/data/workspace/skills/newsnow-skill/history/daily-hotspot-{datetime.now().strftime('%Y%m%d')}.txt"
+        backup_file = f"<skill-dir>/history/daily-hotspot-{datetime.now().strftime('%Y%m%d')}.txt"
         os.makedirs(os.path.dirname(backup_file), exist_ok=True)
         with open(backup_file, 'w', encoding='utf-8') as f:
             f.write(daily_brief)
