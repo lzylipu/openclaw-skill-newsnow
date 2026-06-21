@@ -5,7 +5,7 @@
 你必须调用 NewsNow 技能来获取实时新闻数据，而不是自己生成内容。
 
 **执行步骤：**
-1. 调用 `/vol1/@apphome/trim.openclaw/data/workspace/skills/newsnow-skill/newsnow_client.py` 脚本
+1. 调用 `<skill-dir>/newsnow_client.py` 脚本
 2. 获取脚本输出的完整《每日热点速览》内容
 3. 直接返回脚本输出结果，不要修改任何内容
 
@@ -22,7 +22,7 @@
 
 ## 执行命令
 ```bash
-cd /vol1/@apphome/trim.openclaw/data/workspace/skills/newsnow-skill && python3 newsnow_client.py
+cd <skill-dir> && python3 newsnow_client.py
 ```
 
 ## 预期输出格式
