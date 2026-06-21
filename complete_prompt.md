@@ -7,7 +7,7 @@
 ### 步骤1: 调用 NewsNow 技能获取实时新闻
 执行以下命令获取真实新闻数据：
 ```bash
-cd /vol1/@apphome/trim.openclaw/data/workspace/skills/newsnow-skill && python3 newsnow_client.py
+cd <skill-dir> && python3 newsnow_client.py
 ```
 
 ### 步骤2: 处理脚本输出
@@ -71,7 +71,7 @@ cd /vol1/@apphome/trim.openclaw/data/workspace/skills/newsnow-skill && python3 n
 
 ## 执行环境
 
-- **工作目录**: `/vol1/@apphome/trim.openclaw/data/workspace/skills/newsnow-skill`
+- **工作目录**: `<skill-dir>`
 - **Python 环境**: 系统默认 Python 3
 - **网络访问**: 允许访问外部 API 获取新闻和天气
 - **文件权限**: 可读写 `/tmp` 目录用于日志
