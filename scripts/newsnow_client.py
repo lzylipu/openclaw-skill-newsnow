@@ -13,7 +13,7 @@ from datetime import datetime
 from typing import Dict, List, Optional
 
 # 配置
-NEWSNOW_BASE_URL = os.environ.get("NEWSNOW_BASE_URL", "https://newsnow.busiyi.world")
+NEWSNOW_BASE_URL = os.environ.get("NEWSNOW_BASE_URL", "https://your-newsnow-instance.example.com")
 DEFAULT_TIMEOUT = 30
 
 class NewsNowClient:
@@ -30,7 +30,7 @@ class NewsNowClient:
             "Accept": "application/json"
         })
     
-    def get_weather(self, city: str = "洛阳") -> tuple:
+    def get_weather(self, city: str = "CITY_NAME") -> tuple:
         """获取天气信息"""
         try:
             # 使用 wttr.in 获取天气
@@ -88,9 +88,9 @@ class NewsNowClient:
         try:
             # 构建搜索关键词
             search_keywords = {
-                "信访/治理": "洛阳 信访工作 基层治理",
+                "信访/治理": "CITY_NAME 信访工作 基层治理",
                 "时政": "今日时政 新闻 2026", 
-                "社会民生": "洛阳 民生 社会新闻",
+                "社会民生": "CITY_NAME 民生 社会新闻",
                 "法律政策": "最新法律法规 2026",
                 "热点补充": "今日热点 新闻"
             }
@@ -137,12 +137,12 @@ class NewsNowClient:
         time_str = now.strftime("%H:%M")
         
         # 获取天气
-        weather_desc, weather_temp = self.get_weather("洛阳")
+        weather_desc, weather_temp = self.get_weather("CITY_NAME")
         
         # 构建基础内容
         brief_lines = []
         brief_lines.append(f"《每日热点速览》 {date_str} {weekday_str} {time_str}")
-        brief_lines.append(f"洛阳天气：{weather_desc}，{weather_temp}")
+        brief_lines.append(f"CITY_NAME天气：{weather_desc}，{weather_temp}")
         brief_lines.append("")
         
         # 新闻分类配置

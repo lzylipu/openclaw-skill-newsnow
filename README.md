@@ -22,7 +22,7 @@ pip install requests
 
 ```bash
 # NewsNow API 基础 URL
-export NEWSNOW_BASE_URL="https://newsnow.busiyi.world"
+export NEWSNOW_BASE_URL="https://your-newsnow-instance.example.com"
 
 # 或者部署自己的实例
 export NEWSNOW_BASE_URL="http://localhost:3000"
@@ -65,7 +65,7 @@ python3 newsnow_client.py --help
 AI: 正在获取热点新闻...
 
 《每日热点速览》 2026年03月31日 星期一 07:00
-洛阳天气：晴，15℃~25℃
+CITY_NAME天气：晴，15℃~25℃
 
 一、信访/治理
 关键词1：一句话概述
@@ -111,7 +111,7 @@ AI: 正在获取热点新闻...
 
 支持自定义新闻源，修改配置即可：
 
-- **信访/治理**: 洛阳网、人民网、新华网等
+- **信访/治理**: CITY_NAME网、人民网、新华网等
 - **时政**: 人民日报、央视新闻、新华社等
 - **社会民生**: 澎湃新闻、南方都市报等
 - **法律政策**: 法制日报、中国法院网等
@@ -120,7 +120,7 @@ AI: 正在获取热点新闻...
 ## 部署选项
 
 ### 选项1: 使用公共API
-- 直接调用 `https://newsnow.busiyi.world`
+- 直接调用 `https://your-newsnow-instance.example.com`
 - 无需部署，开箱即用
 
 ### 选项2: 自主部署
