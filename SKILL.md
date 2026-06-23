@@ -15,7 +15,7 @@ metadata:
   hermes:
     tags: [news, newsnow, daily, brief, hotspot]
     related_skills: [daily-morning-brief, daily-hotspot]
-    homepage: https://github.com/lzylipu/openclaw-skill-newsnow
+    homepage: https://github.com/lzylipu/skill-newsnow
     category: personal
     skill_type: cron
 ---
