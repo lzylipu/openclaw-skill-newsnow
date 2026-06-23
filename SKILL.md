@@ -22,7 +22,7 @@ metadata:
 
 # NewsNow 热点新闻技能
 
-基于 [ourongxing/newsnow](https://github.com/ourongxing/newsnow) 项目改造的 OpenClaw Skill。
+基于 [ourongxing/newsnow](https://github.com/ourongxing/newsnow) 项目改造的 Hermes Skill。
 
 ## 功能特性
 
@@ -54,11 +54,11 @@ print(daily_brief)
 
 ### 3. 定时任务配置
 ```yaml
-# OpenClaw 定时任务配置
+# 定时任务配置
 - name: "daily-hotspot"
   schedule: "0 7 * * *"  # 每天7点
   command: "python3 /path/to/newsnow-skill/daily_brief.py"
-  channel: "openclaw-weixin"
+  channel: "hermes-weixin"
 ```
 
 ## 输出格式
