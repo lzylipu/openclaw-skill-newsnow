@@ -1,5 +1,7 @@
 # NewsNow 热点新闻技能 - OpenClaw Skill
 
+**[English](./README.en.md) | 中文**
+
 基于 [ourongxing/newsnow](https://github.com/ourongxing/newsnow) 项目改造的 OpenClaw Skill，提供每日热点速览服务。
 
 ## 功能特性
